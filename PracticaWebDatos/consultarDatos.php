@@ -17,7 +17,7 @@
 
     ?>
 
-    <?php include 'menu.php'; ?>
+    <?php include 'menuBarra.php'; ?>
     <br>
     <div class="container">
         <div class="row">

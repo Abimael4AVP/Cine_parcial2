@@ -16,7 +16,7 @@
         $resultado = $conexion->query($sql);
         $registro = $resultado->fetch_assoc();
     ?>
-    <?php include 'menu.php'; ?>
+    <?php include 'menuBarra.php'; ?>
     <br>
     <div class="container">
         <div class="row">
@@ -37,11 +37,11 @@
                     <div class="form-group">
                     <?php
                         if($registro["clasificacion"]){
-                            echo "<input type='radio' name='clasificacion' value='1' checked> U <br>";
-                            echo "<input type='radio' name='clasificacion' value='0'> 18 <br>";
+                            echo "<input type='radio' name='clasificacion' value='Para todo publico' checked> U <br>";
+                            echo "<input type='radio' name='clasificacion' value='Mayores de edad'> 18 <br>";
                         } else {
-                            echo "<input type='radio' name='clasificacion' value='1'> U <br>";
-                            echo "<input type='radio' name='clasificacion' value='0' checked> 18 <br>";
+                            echo "<input type='radio' name='clasificacion' value='Para Todo publico'> U <br>";
+                            echo "<input type='radio' name='clasificacion' value='Mayores de edad' checked> 18 <br>";
                         }
                     ?>
                     </div>
